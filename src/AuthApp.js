@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import fire from './fire'
+import fire from './fire1'
 import Login from './Login'
-// import Hero from '../../authentication/src/hero';
-// import {validPassword} from './Regex'
-// import './App.css'
-// import './AuthApp.css'
+
 import App from './App';
 function AuthApp() {
   const [user, setUser] = useState('');
@@ -13,7 +10,6 @@ function AuthApp() {
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
   const [hasAccount, setHasAccount] = useState(false);
-
 
 
   const clearInputs = () => {
@@ -36,7 +32,6 @@ function AuthApp() {
         case "auth/invalid-email":
         case "auth/user-disabled":
         case "auth/user-not-found":
-          // console.log(err)
           setEmailError(err.message);
           break;
         case "auth/wrong-password":
@@ -52,11 +47,6 @@ function AuthApp() {
 
   const handleSignup = () => {
     clearErrors()
-  //   if (!validPassword.test(password)) {
-  //     setPasswordError("Your Password is not Strong");
-  //     console.log(passwordError)
-  //  }
-  //  else{
     fire
     .auth()
     .createUserWithEmailAndPassword(email, password)
@@ -100,7 +90,10 @@ useEffect(() =>{
 return (
     <div className = "App">
       {user ? (
-        <App handleLogout = {handleLogout}/>
+        <App handleLogout = {handleLogout}
+        email = {email}
+        user = {user}
+        />
       ):
       (
 <Login
@@ -114,10 +107,10 @@ return (
  setHasAccount = {setHasAccount}
  emailError = {emailError}
  passwordError = {passwordError}
+
 /> 
       )
       }
-
 
 </div> 
   );

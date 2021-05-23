@@ -1,23 +1,29 @@
 import React from 'react'
 
 
-const Login = (props)  =>{
-   const {email,
-    setEmail,
-    password, 
-    setPassword, 
-    handleLogin, 
-    handleSignup, 
-    hasAccount, 
-    setHasAccount, 
-    emailError, 
-    passwordError}
-    
-     = props; 
+const Login = ({email,
+                setEmail,
+                password, 
+                setPassword, 
+                handleLogin, 
+                handleSignup, 
+                hasAccount, 
+                setHasAccount, 
+                emailError, 
+                passwordError}) =>{
+                
     return (
         <section className = 'login'>
+
+            <img
+            src = "https://svgsilh.com/svg/37261.svg"
+            alt = "logo"
+            className = "logo"
+            />
+
             <div className = "loginContainer">
-                <label>UserName</label>
+
+                <label>Email</label>
                 <input
                 type = "text"
                 autoFocus
@@ -38,7 +44,7 @@ const Login = (props)  =>{
                     {hasAccount ? (
                         <>
                         <button onClick ={handleLogin}>Sign in</button>
-                        <p>Don't Have an Account ? <span onClick = {() => setHasAccount(!hasAccount)}>Sign up</span></p>    
+                        <p>Don't Have an Account ? <button onClick = {() => setHasAccount(!hasAccount)}>Sign up</button></p>    
                         
                         </>
                     )
@@ -46,7 +52,7 @@ const Login = (props)  =>{
 
                         <>
                         <button onClick = {handleSignup}>Sign up</button>
-                        <p>Have an Account ? <span onClick = {() => setHasAccount(!hasAccount)}>Sign In</span></p>    
+                        <p>Have an Account ? <button onClick = {() => setHasAccount(!hasAccount)}>Sign In</button></p>    
                             
                             </>
                     )}
