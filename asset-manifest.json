@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Weight-Tracker/static/css/main.003e1d95.chunk.css",
+    "main.css": "/Weight-Tracker/static/css/main.272118a0.chunk.css",
     "main.js": "/Weight-Tracker/static/js/main.dc0e05f0.chunk.js",
     "main.js.map": "/Weight-Tracker/static/js/main.dc0e05f0.chunk.js.map",
     "runtime-main.js": "/Weight-Tracker/static/js/runtime-main.fbb470fb.js",
@@ -8,13 +8,13 @@
     "static/js/2.4fc6ad66.chunk.js": "/Weight-Tracker/static/js/2.4fc6ad66.chunk.js",
     "static/js/2.4fc6ad66.chunk.js.map": "/Weight-Tracker/static/js/2.4fc6ad66.chunk.js.map",
     "index.html": "/Weight-Tracker/index.html",
-    "static/css/main.003e1d95.chunk.css.map": "/Weight-Tracker/static/css/main.003e1d95.chunk.css.map",
+    "static/css/main.272118a0.chunk.css.map": "/Weight-Tracker/static/css/main.272118a0.chunk.css.map",
     "static/js/2.4fc6ad66.chunk.js.LICENSE.txt": "/Weight-Tracker/static/js/2.4fc6ad66.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fbb470fb.js",
     "static/js/2.4fc6ad66.chunk.js",
-    "static/css/main.003e1d95.chunk.css",
+    "static/css/main.272118a0.chunk.css",
     "static/js/main.dc0e05f0.chunk.js"
   ]
 }
